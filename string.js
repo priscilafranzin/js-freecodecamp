@@ -27,3 +27,51 @@ const lastName = "Lovelace";
 // Only change code below this line
 lastNameLength = lastName.length;
 }
+
+{
+    // Setup
+let firstLetterOfLastName = "";
+const lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0];
+}
+
+{
+    let myStr = "Jello World";
+
+// Only change code below this line
+myStr = "Hello World"; 
+}
+
+{
+    const lastName = "Lovelace";
+
+// Only change code below this line
+const thirdLetterOfLastName = lastName[2];
+}
+
+{
+    const lastName = "Lovelace";
+
+// Only change code below this line
+const lastLetterOfLastName = lastName[lastName.length - 1];
+}
+
+{
+    const lastName = "Lovelace";
+
+// Only change code below this line
+const secondToLastLetterOfLastName = lastName[lastName.length - 2];
+}
+
+{
+    const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Only change code below this line
+const wordBlanks = myAdjective +' '+ myNoun + ' ' + myVerb + ' ' + myAdverb;
+console.log(wordBlanks)
+}
