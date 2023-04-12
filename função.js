@@ -525,3 +525,30 @@ if ( count > 0 ){
 
 console.log(cc(2)); cc(3); cc(8); cc('K'); cc('A');
 }
+//refatorando:
+//contagem atual
+let count = 0;
+
+function cc(card) {
+  // Only change code below this line
+  
+// condicionais card
+if ( card >= 2 && card <= 6) {
+  count += 1
+} 
+
+let check = [10, 'J', 'Q', 'K', 'A'].includes(card)
+
+if (check) {
+  count -=1
+}
+
+if ( count > 0 ){
+  return `${count} Bet`
+}
+
+  return `${count} Hold`;
+  // Only change code above this line
+}
+
+console.log(cc(2)); cc(3); cc(8); cc('K'); cc('A');
