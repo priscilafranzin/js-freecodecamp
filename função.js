@@ -552,3 +552,16 @@ if ( count > 0 ){
 }
 
 console.log(cc(2)); cc(3); cc(8); cc('K'); cc('A');
+{
+  function sum(arr, n) {
+  // Only change code below this line
+
+if (n <= 0) {
+  return 0;
+} else {  
+  return sum(arr, n -1) + arr[n -1];
+}
+  // Only change code above this line
+}
+console.log(sum([2,3,4],1))
+}
