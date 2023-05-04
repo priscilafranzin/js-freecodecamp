@@ -210,3 +210,11 @@ function updateRecords(records, id, prop, value) {
 
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
 }
+{
+   
+
+  for (let i = 0; i < contacts.length; i++ ){
+    if(contacts[i].firstName ===  name && contacts[i].hasOwnProperty(prop)) {
+      return contacts[i][prop]
+}
+  }
