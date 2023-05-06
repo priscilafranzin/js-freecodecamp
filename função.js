@@ -565,3 +565,22 @@ if (n <= 0) {
 }
 console.log(sum([2,3,4],1))
 }
+{
+  function randomFraction() {
+
+    // Only change code below this line
+  
+    return Math.random();
+}
+{
+  function randomWholeNum() {
+
+    return Math.floor(Math.random() * 10);
+  }
+}
+{
+  function randomRange(myMin, myMax) {
+    return Math.floor(Math.random() * (myMax - myMin +1 ))+ myMin ;
+  
+  }
+}
