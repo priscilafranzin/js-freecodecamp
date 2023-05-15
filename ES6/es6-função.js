@@ -155,4 +155,26 @@ const half = ({max, min}) => (max + min) / 2.0;
   
   const failuresList = makeList(result.failure);
 }
+{
+const createPerson = (name, age, gender) => {
+  // Only change code below this line
+  return { 
+    name,
+    age,
+    gender
+  };
+  // Only change code above this line
+};
+}
+{
+  const bicycle = {
+  gear: 2,
+  setGear (newGear) {
+    this.gear = newGear;
+  }
+};
+// Only change code above this line
+bicycle.setGear(3);
+console.log(bicycle.gear);
+}
   
