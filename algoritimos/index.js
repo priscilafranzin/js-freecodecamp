@@ -93,3 +93,42 @@ confirmEnding("Bastian", "n");
 
 repeatStringNumTimes("abc", 3);
 }
+//truncar uma string
+{
+  function truncateString(str, num) {
+if(str.length > num ){
+  let  textTrunc = str.substring(0, num) + '...';
+  return textTrunc
+} else{
+
+  return str;
+}
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
+}
+//função com elemento função
+{
+  function findElement(arr, func) { 
+
+    for(let i = 0; i < arr.length; i++){  
+       if(func(arr[i]) === true) {
+         return arr[i]
+       }     
+     }
+   }
+   
+   findElement([1, 3, 5, 8, 9, 10], num => num % 2 === 0);
+}
+//boolean
+{
+  function booWho(bool) {
+    if(typeof bool === 'boolean'){
+    return true
+    }
+    return false
+     }
+    
+    
+    booWho(null);
+}
