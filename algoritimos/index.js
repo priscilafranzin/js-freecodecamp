@@ -132,3 +132,31 @@ truncateString("A-tisket a-tasket A green and yellow basket", 8);
     
     booWho(null);
 }
+// deixar uma string com letras maiusculas
+{
+  function titleCase(str) {
+ let myString = ''
+ let myArr = str.split(' ')
+ 
+ for(let i = 0; i < myArr.length; i++){
+   let palavra = myArr[i];
+   let primeiraLetra = palavra.charAt(0).toUpperCase();
+   let restante = palavra.slice(1).toLowerCase()
+   myString += primeiraLetra + restante + ' '
+ }
+console.log(myString)
+  return myString.trim();
+}
+
+titleCase("sHoRt AnD sToUt");
+}
+// fazer uma copia do array
+{
+  function frankenSplice(arr1, arr2, n) {
+  let arr = [...arr2.slice(0, n), ...arr1, ...arr2.slice(0 - n)];
+console.log(arr)
+  return arr;
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
+}
