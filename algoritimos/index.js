@@ -160,3 +160,36 @@ console.log(arr)
 
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
 }
+//retirando elementos falsos de um array
+{
+  function bouncer(arr) {
+ let newArr = []
+ for(let i = 0; i < arr.length; i++){
+   if(Boolean(arr[i])){
+     newArr.push(arr[i])
+   }
+ }
+ console.log(newArr)
+  return newArr;
+}
+
+bouncer([7, "ate", "", false, 9]);
+}
+//identificar um indice no array
+{
+  function getIndexToIns(arr, num) {
+  arr.sort((a, b) => a - b);
+
+  if(arr.length === 0) return 0;
+
+  for (let index = 0; index < arr.length; index++) {
+   if(arr[index] >= num){
+     return index
+   } else if (arr[index] === arr[arr.length -1] && arr[index] < num) {
+     return index + 1
+   } 
+  }
+}
+
+getIndexToIns([2, 5, 10], 15);
+}
