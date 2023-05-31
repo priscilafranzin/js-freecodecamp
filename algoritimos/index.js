@@ -193,3 +193,33 @@ bouncer([7, "ate", "", false, 9]);
 
 getIndexToIns([2, 5, 10], 15);
 }
+//comparando strings de um array
+function mutation(arr) {
+ if( arr.length < 2) return false
+ const str1 = arr[0].toLowerCase()
+ const str2 = arr[1].toLowerCase()
+ for(let i = 0; i < str2.length; i++){
+   let caracter = str2[i]
+   
+     if(!str1.includes(caracter)){
+       return false
+     
+   }
+ } 
+  return true;
+}
+
+mutation(["hello", "hey"]);
+//dividindo um array em subArray
+{
+  function chunkArrayInGroups(arr, size) {
+  let newArr = []
+  for(let i = 0; i < arr.length; i += size){
+   let subArr = arr.slice(i, i + size)
+   newArr.push(subArr)
+  }
+  
+  return newArr;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
