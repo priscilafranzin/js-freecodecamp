@@ -337,3 +337,74 @@ function getRating(watchList) {
 
 console.log(getRating(watchList));
 }
+//filtrar um array
+{
+  const squareList = arr => {
+  // Only change code below this line
+  const newList = arr
+  .filter((number) => Number.isInteger(number) && number > 0 )
+  .map((number)=> number ** 2)
+  
+  return newList;
+  // Only change code above this line
+};
+
+const squaredIntegers = squareList([4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2]);
+console.log(squaredIntegers);
+}
+//  usando metodo .sort
+{
+  function alphabeticalOrder(arr) {
+  // Only change code below this line
+
+  return arr.sort()
+  
+  
+  }
+
+  // Only change code above this line
+
+
+console.log(alphabeticalOrder(["a", "d", "c", "a", "z", "g"]));
+}
+{
+  const globalArray = [5, 6, 3, 2, 9];
+
+function nonMutatingSort(arr) {
+  // Only change code below this line
+let newArr = [...arr]
+.sort((a , b) => a - b)
+console.log(newArr)
+return newArr
+
+  // Only change code above this line
+}
+
+nonMutatingSort(globalArray);
+}
+//metodo .split com expressão regular
+{
+  function splitify(str) {
+  // Only change code below this line
+const myStr = str.split(/\W/)
+console.log(myStr)
+return myStr
+
+  // Only change code above this line
+}
+
+splitify("Hello World,I-am code");
+}
+//metodo .join
+{
+  function sentensify(str) {
+  // Only change code below this line 
+const word = str.split(/\W/).join(' ')
+console.log(word)
+return word
+
+  // Only change code above this line
+}
+
+sentensify("The.force.is.strong.with.this.one");
+}
