@@ -408,3 +408,36 @@ return word
 
 sentensify("The.force.is.strong.with.this.one");
 }
+//mudar string para versão URL
+{
+  function urlSlug(title) {
+const str = title.match(/\w+/g).join('-').toLowerCase()
+console.log(str)
+return str
+}
+// Only change code above this line
+urlSlug(" Winter Is  Coming");
+}
+//metodo . every
+{
+  function checkPositive(arr) {
+  // Only change code below this line
+return arr.every((el) => el > 0 );
+
+
+  // Only change code above this line
+}
+
+checkPositive([1, 2, 3, -4, 5]);
+}
+// metodo . some
+{
+  function checkPositive(arr) {
+  // Only change code below this line
+return arr.some((el) => el > 0)
+
+  // Only change code above this line
+}
+
+checkPositive([1, 2, 3, -4, 5]);
+}
